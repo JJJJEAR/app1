@@ -7,10 +7,14 @@ import { Calculator } from "./calculator";
 export default function App() {
   return (
     <>
-      <div>
-        <Calculator />
+    <div>
+    <Header/>
+        <p><center><Calendar/></center></p>
+        <Content/>
+        <center><Calculator /></center>
         <Banner />
-      </div>
+    <Footer/>  
+    </div>
     </>
   );
 }
