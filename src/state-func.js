@@ -19,7 +19,7 @@ export default function MessageBox() {
     let msgboxStyle = {
         display:'inline-block',
         width: 350,
-        fontsize: size,
+        fontSize: size,
         backgroundColor:'#ccc',
         padding: 5,
         textAlign:'left'
