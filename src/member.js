@@ -1,10 +1,9 @@
 import React from "react"
-export default class Member extends React.Component {
-  render() {
+
+export default function Member() {
     return (
-      <div style={{textAlign:'center'}}> Member Page</div>
-    )
-  }
-}
+        <div style={{textAlign:'center'}}> Member Page</div>
+      )
+    }
 
 
