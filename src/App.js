@@ -10,8 +10,6 @@ export default function App() {
     <>
     <div> 
 
-    <Router3/>
-    <FormBootstrap/>
     <FormText/>
     </div>
     </>
