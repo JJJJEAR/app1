@@ -74,9 +74,9 @@ export default function FormCheck () {
             <label htmlFor="sw" className="form-check-label">require</label>
         </div>
 
-        <div className="text-center mt-4">
-            <button type="button" className="btn btn-sm px-4 bf-primary" 
-                onClick={onClickButton} >
+        <div className="text-center mt-4 ">
+            <button type="button" className="btn btn-sm px-4 bg-primary text-white " 
+                onClick={onClickButton} >OK
             </button>
         </div>
     </form>
