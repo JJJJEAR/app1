@@ -57,7 +57,7 @@ const err = {
                     <input type="number" id="price" name="price" min="0" step="any"
                         className="form-control form-control-sm"
                         {...register('price', {validate: value => parseFloat(value) > 0}) } />
-                    {errors.price && <div style={err}>กรุณาระบุราคาสินค้า</div>}
+                    {errors.price && <div style={err}>กำหนดราคาสินค้าเป็นตัวเลขมากกว่า 0</div>}
                 </div>
                 <div className="form-group mb-3">
                     <label htmlFor="detail">รายละเอียดสินค้า *</label>
@@ -65,7 +65,7 @@ const err = {
                         className="form-control form-control-sm"
                         {...register('detail', { required: true, minLength: 1, maxLength: 200})}>
                     </textarea>
-                    {errors.detail && <div style={err}>กรุณาระบุ...</div>}
+                    {errors.detail && <div style={err}>ต้องกำหนดรายละเอียดสินค้า</div>}
                 </div>
                 <div className="form-group mb-3">
                     <label htmlFor="price">วันที่เพิ่มสินค้า *</label>
@@ -76,7 +76,7 @@ const err = {
                     <label htmlFor="file" className="form-label">ภาพสินค้า * (ไม่เกิน 3 ไฟล์
                         ขนาดสูงสุด 300 KB/ไฟล์)</label>
                     <input type="file" id="file" accept="image/*"
-                        className="form-control form-control-sm"  multiple/>
+                        className="form-control form-control-sm" ref={inputFile} multiple/>
                 </div>
                 <div>ออปชั่นเพิ่มเติม</div>
                 {
@@ -91,7 +91,7 @@ const err = {
                     })
                 }
                 <div className="text-center mt-4">
-                    <button className=" btn-sm px-4">OK</button>
+                    <button className="btn btn-primary btn-sm px-4 ">OK</button>
                 </div>
             </form>
         </div>
